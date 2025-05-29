@@ -70,6 +70,14 @@ body {
   background: #5f1ce1;
 }
 
+.container {
+  padding: 5%;
+}
+h1 {
+  font-size: 5vw; /* Adjusts dynamically */
+}
+
+
 /* Hero Section */
 .hero {
   display: flex;
