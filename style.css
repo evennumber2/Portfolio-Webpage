@@ -206,9 +206,20 @@ h1 {
   color: #333;
 }
 .education .column {
-  flex: 1 1 300px; /* Adjusts width dynamically */
-  max-width: 400px; /* Prevents excessive stretching */
+  flex: 1 1 350px; /* Allows flexibility */
+  min-width: 300px; /* Ensures a minimum width */
+  max-width: 500px; /* Prevents excessive stretching */
 }
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .education .column {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    min-width: unset;
+    max-width: none;
+  }
+}
+
 
 /* Ensure responsiveness */
 @media (max-width: 768px) {
