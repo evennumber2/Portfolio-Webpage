@@ -208,7 +208,7 @@ h1 {
 .education .column {
   flex: 1 1 350px; /* Allows flexibility */
   min-width: 300px; /* Ensures a minimum width */
-  max-width: 500px; /* Prevents excessive stretching */
+  max-width: 800px; /* Prevents excessive stretching */
 }
 
 /* Ensure responsiveness */
