@@ -423,4 +423,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ===== TOUCH INTERACTIONS ===== */
+  if ('ontouchstart' in window) {
+    document.body.style.cursor = 'auto';
+
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    document.addEventListener('touchstart', (e) => {
+      const touch = e.touches[0];
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+    }, { passive: true });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!e.touches[0]) return;
+      const touch = e.touches[0];
+      const deltaX = (touch.clientX - touchStartX) / window.innerWidth;
+      const deltaY = (touch.clientY - touchStartY) / window.innerHeight;
+
+      targetRotX = deltaY * 0.05;
+      targetRotY = deltaX * 0.05;
+    }, { passive: true });
+
+    document.addEventListener('touchend', () => {
+      targetRotX = 0;
+      targetRotY = 0;
+    }, { passive: true });
+  }
+
 });
