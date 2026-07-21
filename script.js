@@ -274,6 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const strings = [
       'Fresher',
       'Python Developer',
+      'AI-Assisted Full Stack Developer',
       'Data Science Enthusiast',
       'Problem Solver',
       'Tech Explorer',

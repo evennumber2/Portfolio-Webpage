@@ -872,6 +872,69 @@ canvas#bg-canvas {
   color: var(--accent-primary);
 }
 
+/* ===== TARGET ROLES ===== */
+.target-roles {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s;
+}
+
+.target-roles:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-3px);
+}
+
+.target-roles h4 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: var(--accent-secondary);
+  letter-spacing: 0.03em;
+}
+
+.target-roles-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.target-role-tag {
+  padding: 6px 16px;
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: 20px;
+  font-size: 0.82rem;
+  color: var(--accent-primary);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.target-role-tag:hover {
+  background: rgba(124, 58, 237, 0.2);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.2);
+  transform: translateY(-2px);
+}
+
+.contact-message {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--glass-border);
+}
+
+.contact-message p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.contact-message .hero-social {
+  justify-content: center;
+}
+
 /* ===== FOOTER ===== */
 .site-footer {
   text-align: center;
