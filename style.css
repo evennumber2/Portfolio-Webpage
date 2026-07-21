@@ -570,16 +570,7 @@ canvas#bg-canvas {
   stroke-dashoffset: 282.7;
 }
 
-.skill-percent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
+
 
 /* ===== SKILL CATEGORIES ===== */
 .skill-categories {
@@ -887,6 +878,8 @@ canvas#bg-canvas {
   padding: 32px 24px;
   border-top: 1px solid var(--glass-border);
   margin-top: 48px;
+  position: relative;
+  z-index: 1;
 }
 
 .site-footer p {

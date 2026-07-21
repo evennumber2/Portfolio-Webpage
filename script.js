@@ -332,10 +332,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const circumference = 282.7;
         const offset = circumference - (percent / 100) * circumference;
         const progressCircle = ring.querySelector('.progress');
-        const percentEl = ring.querySelector('.skill-percent');
 
         progressCircle.style.strokeDashoffset = circumference;
-        percentEl.textContent = '0%';
 
         let currentPercent = 0;
         const duration = 1500;
@@ -349,7 +347,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
           const currentOffset = circumference - (currentPercent / 100) * circumference;
           progressCircle.style.strokeDashoffset = currentOffset;
-          percentEl.textContent = currentPercent + '%';
 
           if (progress < 1) {
             requestAnimationFrame(animateProgress);
